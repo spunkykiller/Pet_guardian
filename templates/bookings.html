@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{{ url_for('home') }}">Pet Boarding</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('profile') }}">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('bookings') }}">Bookings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('payments') }}">Payments</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <section id="bookings">
+      <h2 class="text-center">Bookings</h2>
+      <div class="card-deck">
+        <div class="card">
+          <img src="images/cat_image.jpg" class="card-img-top" alt="Pet 1">
+          <div class="card-body">
+            <h5 class="card-title">Pet Boarding 1</h5>
+            <p class="card-text">I have to go to Mumbai for a important startup meetup for a week.</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/pub_image.png" class="card-img-top" alt="Pet 2">
+          <div class="card-body">
+            <h5 class="card-title">Pet Boarding 2</h5>
+            <p class="card-text">Due to my work I have to go to Canada for a field visit for 3 months.So I want to pet board my Tommy. </p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/parrot.jpg" class="card-img-top" alt="Pet 3">
+          <div class="card-body">
+            <h5 class="card-title">Pet Boarding 3</h5>
+            <p class="card-text">I want to pet board my parrot as I am going to USA for my personal work.</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+ m
