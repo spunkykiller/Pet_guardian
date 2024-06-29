@@ -29,8 +29,9 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('login') }}">Login</a>
           </li>
+          <!-- Discord Modal Trigger Button -->
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('payments') }}">Payments</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#discordModal">Discord</a>
           </li>
         </ul>
       </div>
@@ -69,6 +70,24 @@
       <p class="text-center">Your pets are in safe hands.</p>
     </section>
   </main>
+
+  <!-- Discord Modal -->
+  <div class="modal right fade" id="discordModal" tabindex="-1" role="dialog" aria-labelledby="discordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="discordModalLabel">Join Our Discord</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Click the button below to join our Discord community:</p>
+          <a href="YOUR_DISCORD_INVITE_LINK" class="btn btn-primary btn-block" target="_blank">Join Discord</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
