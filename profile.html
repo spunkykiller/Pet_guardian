@@ -39,7 +39,34 @@
   <main class="container mt-4">
     <section id="profile">
       <h2 class="text-center">Profile</h2>
-      <!-- Add your profile content here -->
+      <form id="profileForm" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+          <div class="invalid-feedback">Please enter your email.</div>
+        </div>
+        <div class="form-group">
+          <label for="petName">Pet Name:</label>
+          <input type="text" class="form-control" id="petName" name="petName" required>
+          <div class="invalid-feedback">Please enter your pet's name.</div>
+        </div>
+        <div class="form-group">
+          <label for="petBreed">Pet Breed:</label>
+          <input type="text" class="form-control" id="petBreed" name="petBreed" required>
+          <div class="invalid-feedback">Please enter your pet's breed.</div>
+        </div>
+        <div class="form-group">
+          <label for="petAge">Pet Age:</label>
+          <input type="number" class="form-control" id="petAge" name="petAge" required>
+          <div class="invalid-feedback">Please enter your pet's age.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Profile</button>
+      </form>
     </section>
   </main>
 
